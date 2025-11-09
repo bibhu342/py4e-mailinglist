@@ -1,8 +1,25 @@
-# Py4E Mailing List Data – Part I
-Subset spider of sakai.devel from mbox.dr-chuck.net → content.sqlite → gmodel to index.sqlite → gbasic histogram.
+# Py4E – Mailing List ETL & Analysis (Sakai Developer Archive)
 
-## Screenshots
-- content.sqlite (Messages, bottom visible)
-- gmodel.py terminal (shows "Loaded allsenders …")
-- index.sqlite (Messages, bottom visible)
-- gbasic.py terminal ("How many to dump", "Loaded messages")
+Hands-on email corpus pipeline from the Py4E capstone.  
+Implements a real-world mini ETL workflow:
+
+### ✅ Workflow
+1. Spider a public mailing list (`sakai.devel` from mbox.dr-chuck.net)
+2. Store raw messages in `content.sqlite` (message, headers, sender, body)
+3. Normalize & map identities into `index.sqlite` with `gmodel.py`
+4. Run basic frequency & activity stats with `gbasic.py`
+
+### 🎯 Skills Demonstrated
+- Data ingestion from public archive
+- Parsing unstructured text (email messages)
+- SQLite modeling (raw → normalized DB)
+- Sender identity resolution (`mapping.sqlite`)
+- Basic data analysis
+
+### 📂 Output
+Screenshots included:
+- Raw DB (`content.sqlite`)
+- Modeled DB (`index.sqlite`)
+- Terminal runs for gmodel & gbasic
+
+> Mini data engineering pipeline for historical email data.
