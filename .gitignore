@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# SQLite outputs (don’t version raw data)
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
