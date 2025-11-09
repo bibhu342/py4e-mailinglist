@@ -23,3 +23,11 @@ Screenshots included:
 - Terminal runs for gmodel & gbasic
 
 > Mini data engineering pipeline for historical email data.
+
+## Part II — Visualizations
+- `gbasic.py` run (>300 msgs) with Top Participants & Organizations
+- Word cloud: `gword.py` → `gword.htm`
+- Timeline (monthly): `gline.py` → `gline.htm`
+- Optional: yearly timeline by changing `strftime('%Y-%m')` → `'%Y'` and label “Month” → “Year”
+Screenshots in `Screenshots_mailing_list_II/`.
+
